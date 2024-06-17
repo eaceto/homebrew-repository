@@ -6,13 +6,13 @@ class Xcspec < Formula
   if OS.mac?
     if Hardware::CPU.intel?
       url "https://github.com/eaceto/xcspec/releases/download/1.0.0/xcspec-macos-x86_64"
-      sha256 "aeaa95d6e186e436604128ceeeefccd3c801a593227bdd775ad067d26515b9cf"
+      sha256 "fd017dd27fd752f9a114bbdb3e9d9dc357d9651cabd8bbaa3680bdb622a0ebcf"
       def install
         bin.install "xcspec-macos-x86_64" => "xcspec"
       end
     elsif Hardware::CPU.arm?
       url "https://github.com/eaceto/xcspec/releases/download/1.0.0/xcspec-macos-arm64"
-      sha256 "20e2ec82204d6e813d2d21bf4dc30a5724aa7e6bd03c30704086ff5bde2f2793"
+      sha256 "9dcc11b1067cf8a8472447dcf2734a67b5d3126f0c9b6c9592954e291f2ec630"
       def install
         bin.install "xcspec-macos-arm64" => "xcspec"
       end
@@ -20,13 +20,13 @@ class Xcspec < Formula
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/eaceto/xcspec/releases/download/1.0.0/xcspec-linux-x86_64"
-      sha256 "d7777479d432dfb614dba8b30216d19bc91237d8cac3c2a292d1bcae44abe062"
+      sha256 "fb31f1d40ef0faed3de7d00f031bf7a2b67f5f93d5566cdba47bd1f04ab3aa1e"
       def install
         bin.install "xcspec-linux-x86_64" => "xcspec"
       end
     elsif Hardware::CPU.arm?
       url "https://github.com/eaceto/xcspec/releases/download/1.0.0/xcspec-linux-arm64"
-      sha256 "02e3d92a6aed110cac90509a816adb12d66aeed1af90423485659fe36aed424d"
+      sha256 "8e844e32e2874b9fe40ae0394d9fee552c132dccf675d3518ac64852a4ac1ac2"
       def install
         bin.install "xcspec-linux-arm64" => "xcspec"
       end
@@ -34,13 +34,13 @@ class Xcspec < Formula
   elsif OS.windows?
     if Hardware::CPU.intel?
       url "https://github.com/eaceto/xcspec/releases/download/1.0.0/xcspec-windows-x86_64.exe"
-      sha256 "42962dc618da4620096df6cce522004040f109dbdfc2303d58984397455c59b4"
+      sha256 "655fc29e597fb04d2899992acf9ecd526933523f98db5ccfcb1553c3f9e0696a"
       def install
         bin.install "xcspec-windows-x86_64.exe" => "xcspec.exe"
       end
     elsif Hardware::CPU.arm?
       url "https://github.com/eaceto/xcspec/releases/download/1.0.0/xcspec-windows-arm64.exe"
-      sha256 "e5c728456479673fb36787a8511196a6ab827be892e748b240f102b20e5a36e4"
+      sha256 "d06c361b7e3ff10a217068d006abc482316d970e3791b0548f1413378a487545"
       def install
         bin.install "xcspec-windows-arm64.exe" => "xcspec.exe"
       end
